@@ -1,29 +1,54 @@
-const getMayor = (x , y )=>{
+const getMayor = ( x , y ) =>  {
 
+    /*
+    if( x > y ) return x
+    else return y
+    */
+    
     if( x > y ) return x
     return y
 
 }
-const getMenor = (x , y )=>{
 
+const getMenor = ( x , y ) =>  {
+
+    /*
+    if( x > y ) return x
+    else return y
+    */
+    
     if( x < y ) return x
     return y
 
 }
 
+foc( txtNumero01 )
+dis( txtNumeroMayor )
+dis( txtNumeroMenor )
+
 btnProcesar.onclick = () => {
 
-    n1 = flo( get( txtNumero01  ) )
-    n2 = flo( get( txtNumero02  ) )
+    // leer datos
+    n1 = int( get( txtNumero01 ) )
+    n2 = int( get( txtNumero02 ) )
 
-    mayor = getMayor( n1,n2 )
-    menor = getMenor( n1,n2 )
+    // procedimiento
+    mayor = getMayor( n1 , n2  )
+    menor = getMenor( n1 , n2  )
 
-    set( txtNumeroMayor , mayor )
-    set( txtNumeroMenor , menor )
+    // salida de resultados
+    set( txtNumeroMayor , mayor  )
+    set( txtNumeroMenor , menor  )
+
 
 };
 
 btnLimpiar.onclick = () => {
+
+    cle( txtNumeroMayor )
+    cle( txtNumeroMenor )
+    cle( txtNumero01 )
+    cle( txtNumero02 )
+    foc( txtNumero01 )
 
 };

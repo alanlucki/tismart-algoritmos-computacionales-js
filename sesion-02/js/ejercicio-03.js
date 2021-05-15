@@ -1,13 +1,31 @@
-const getAleatorioEntre = (x, y) => {
-  return Math.round(x + (y - x) * Math.random());
-};
+foc( txtInferior )
+dis( txtGenerado )
+
+const getAleatorioEntre = ( x , y  )=> {
+    // Math.random()    
+    return Math.round( x + ( y - x ) * Math.random() )
+}
 
 btnProcesar.onclick = () => {
-  inf = int(get(txtInferior));
-  sup = int(get(txtSuperior));
-  res = getAleatorioEntre(inf, sup);
 
-  set(txtGenerado, res);
+    // lectura de datos
+
+    inf = int( get( txtInferior  ) )
+    sup = int( get( txtSuperior  ) )
+
+    // procedimiento
+    ale = getAleatorioEntre( inf , sup )
+    
+    // resultados
+    set( txtGenerado , ale )
+
 };
 
-btnLimpiar.onclick = () => {};
+btnLimpiar.onclick = () => {
+
+    cle(txtInferior)
+    cle(txtSuperior)
+    cle(txtGenerado)
+    foc( txtInferior )
+
+};

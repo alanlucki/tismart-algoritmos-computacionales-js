@@ -1,43 +1,49 @@
-foc(txtA)
+txtA.focus()
 
-dis(txtSuma)
-dis(txtResta)
-dis(txtMultiplicacion)
-dis(txtDivision)
-dis(txtResiduo)
+txtSuma.disabled = true
+txtResta.disabled = true
+txtMultiplicacion.disabled = true
+txtDivision.disabled = true
+txtResiduo.disabled = true
+
+const suma = ( n1 , n2 ) =>{
+    return n1 + n2 
+}
+const diferencia = ( n1 , n2 ) =>{
+    return n1 - n2 
+}
+const producto = ( n1 , n2 ) =>{
+    return n1 * n2 
+}
+const cociente = ( n1 , n2 ) =>{
+    return n1 / n2 
+}
+const resto = ( n1 , n2 ) =>{
+    return n1 % n2 
+}
 
 btnProcesar.onclick = () => {
-    
+  
     // leer datos
-    a = flo(get( txtA ))
-    b = flo(get( txtB ))
+    na = flo(get( txtA ))
+    nb = flo(get( txtB ))
 
-    // proceso
-    s = a + b
-    d = a - b
-    p = a * b
-    q = a / b
-    r = a % b
+    // procesar datos
+    s = suma( na , nb  )
+    d = diferencia( na , nb  )
+    p = producto(  na , nb )
+    q = cociente( na , nb  )
+    r = resto( na , nb  )
 
-    // salida de resultados
+    // resultados
     set( txtSuma , s )
     set( txtResta , d )
     set( txtMultiplicacion , p )
     set( txtDivision , q )
     set( txtResiduo , r )
-
- 
+    
 };
 
 btnLimpiar.onclick = () => {
-
-    set( txtSuma , '' )
-    set( txtResta , '' )
-    set( txtMultiplicacion , '' )
-    set( txtDivision , '' )
-    set( txtResiduo , '' )
-    set( txtA , '' )
-    set( txtB , '' )
-    foc( txtA )
-
-}
+  
+};
