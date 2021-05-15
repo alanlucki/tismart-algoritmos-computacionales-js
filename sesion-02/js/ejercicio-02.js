@@ -1,0 +1,7 @@
+btnProcesar.onclick = () => {
+
+};
+
+btnLimpiar.onclick = () => {
+
+};
