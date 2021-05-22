@@ -1,0 +1,17 @@
+{
+  "name": "sesion-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejercicio-01.js",
+  "scripts": {
+
+    "ejercicio-01": "nodemon ejercicio-01.js" ,
+    "ejercicio-02": "nodemon ejercicio-02.js" ,
+    "ejercicio-03": "nodemon ejercicio-03.js" ,
+    "ejercicio-04": "nodemon ejercicio-04.js" ,
+    "ejercicio-05": "nodemon ejercicio-05.js" 
+
+  },
+  "author": "",
+  "license": "ISC"
+}
